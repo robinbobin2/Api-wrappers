@@ -12,7 +12,6 @@ if (isset($_REQUEST['number']) && $_REQUEST['number']!='') {
 
 	} elseif($_REQUEST['type']=='numverify') {
 		$numverifyResult = $numverify->verify($_REQUEST['number']);
-		var_dump($numverifyResult);
 	} elseif($_REQUEST['type']=='both') {
 		$numverifyResult = $numverify->verify($_REQUEST['number']);
 		$neutrinoResult = $neutrino->verify($_REQUEST['number']);
